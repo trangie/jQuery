@@ -3,8 +3,25 @@ var main = function(){
 
 	$(".comment-input button").on("click", function (event) {
 		//Add a comment to the comments section
-		var $newComment = $("<p>").text($(".comment-input input").val());
-		$(".comments").append($newComment);
+		if($(".comment-input input").val() !==""){
+			var $newComment = $("<p>").text($(".comment-input input").val());
+			$(".comments").append($newComment);
+
+			//Reset input box
+			$(".comment-input input").val("");
+		}
+	});
+
+	$(".comment-input input").on("keypress", function (event){
+		if(event.keyCode === 13){
+			if($(".comment-input input").val() !==""){
+				var $newComment = $("<p>").text($(".comment-input input").val());
+				$(".comments").append($newComment);
+
+				//Reset input box
+				$(".comment-input input").val("");
+			}
+		}
 	});
 };
 

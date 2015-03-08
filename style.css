@@ -59,6 +59,10 @@ main{
 	margin-left: 5px;
 }
 
+.comment_input span:hover{
+	cursor: pointer;
+}
+
 .comments {
 	max-width: 550px;
 	overflow: auto;
