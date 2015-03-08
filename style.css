@@ -34,6 +34,7 @@ main{
 }
 
 .comment-input{
+	float: left;
 	max-width: 300px;
 	overflow: auto;
 }
@@ -80,6 +81,7 @@ main{
 }
 
 footer{
+	font-size: 10px;
 	overflow:auto;
 	width: auto;
 	font-family: Arial;
