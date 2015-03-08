@@ -1,4 +1,87 @@
-*{
-	margin: 20px;
-	padding: 0;
+header, main, footer{
+	min-width: 855px;
 }
+
+header .container, main .container, footer .container{
+	max-width: 855px;
+	margin: auto;
+}
+
+header{
+	overflow: auto;
+	border-bottom: 1px solid darkslategray;
+}
+
+header h1{
+	float: left;
+	font-family: Arial;
+	width: 200px;
+}
+
+header p{
+	float:right;
+	width: 550px;
+	font-style: italic;
+	font-family: Arial;
+
+}
+
+main{
+	overflow: auto;
+	float: left;
+	font-family: Arial;
+	border-bottom: 1px solid darkslategray;
+}
+
+.comment-input{
+	max-width: 300px;
+	overflow: auto;
+}
+
+.comment-input input{
+	font-family: Arial;
+	width: 80%;
+	height: 30px;
+	font-size: 1.2em;
+	font-weight: bold;
+
+}
+
+.comment-input button {
+	font-weight: bold;
+	padding: 3px;
+	border-radius: 5px;
+	color: ivory;
+	background: olivedrab;
+	cursor: pointer;
+	font-size: 1.5em;
+	margin-left: 5px;
+}
+
+.comments {
+	max-width: 550px;
+	overflow: auto;
+	float: right;
+	min-width: 550px;
+	padding: 10px;
+}
+.comments p {
+	padding: 5px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+
+.comments p:nth-child(even){
+	background: lavender;
+}
+
+.comments p:nth-child(odd){
+	background: gainsboro;
+}
+
+footer{
+	overflow:auto;
+	width: auto;
+	font-family: Arial;
+}
+
