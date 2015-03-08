@@ -3,7 +3,8 @@ var main = function(){
 
 	$(".comment-input button").on("click", function (event) {
 		//Add a comment to the comments section
-		$(".comments").append("<p>This is a new comment!</p>");
+		var $newComment = $("<p>").text($(".comment-input input").val());
+		$(".comments").append($newComment);
 	});
 };
 
